@@ -10,8 +10,9 @@ import "./Posts.css";
 const Post = props => {
   // set up state for the likes
 const [likes, setLikes]= useState(props.post.likes);
+
 const incrementLikes = () =>{
-  setLikes(likes => likes + 1);
+  setLikes(likes => likes + 1 );
 };
   return (
     <div className="post-border">
